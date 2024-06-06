@@ -1,0 +1,48 @@
+POST http://localhost:4000/register
+Content-Type: application/json
+
+{
+    "name":"Joe",
+    "email":"joe@example.com",
+    "password":"joepassword"
+}
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "email":"joe@example.com",
+    "password":"joepassword"
+}
+###
+
+GET http://localhost:4000/posts
+###
+
+GET http://localhost:4000/authors
+###
+
+GET http://localhost:4000/posts/664f9435eb3e6bea51dfdc6e
+###
+
+POST http://localhost:4000/newpost
+Content-Type: application/json
+
+{
+    "title":"Joe's guide on how to improve your mental health in 2024",
+    "summary":"A simple guide on how to recover your sanity",
+    "content":"Improving your mental health involves incorporating small but impactful habits into your daily routine. Start by practicing mindfulness through meditation or deep-breathing exercises to reduce stress and increase self-awareness. Ensure you get regular physical exercise, as it boosts mood and overall well-being. Prioritize sleep, aiming for 7-9 hours per night, and maintain a balanced diet rich in nutrients. Stay connected with friends and loved ones for emotional support, and don't hesitate to seek professional help if needed. By taking these steps, you can enhance your mental resilience and overall happiness.",
+    "author":"664f9435eb3e6bea51dfdc6e"
+}
+###
+
+PUT http://localhost:4000/updatepost/664f9c55128059cdc75ba3f6
+Content-Type: application/json
+
+{
+    "title":"Joe's guide on how to be cool in 2024",
+    "summary":"A simple guide on how to be cool in 2024",
+    "content":"Being cool in 2024 is all about embracing sustainability, staying digitally savvy, prioritizing your well-being, and fostering genuine connections. Wear eco-friendly fashion, keep up with the latest tech trends, and maintain a strong presence on social media. Focus on your mental and physical health through mindful practices and regular exercise. Finally, cultivate authentic relationships by being present, listening actively, and showing kindness. Coolness today is defined by a balance of style, awareness, and genuine interactions.",
+    "author":"664f9435eb3e6bea51dfdc6e"
+}
